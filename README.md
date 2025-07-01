@@ -1,4 +1,4 @@
-# 🍺 Abschlussprojekt: React Beer API
+# 🍺 Projekt: React Beer API
 
 Diese Webanwendung zeigt verschiedene Biersorten aus einer externen API, stellt detaillierte Informationen zu jedem Bier bereit und erlaubt dem Benutzer, sich ein zufälliges Bier anzeigen zu lassen. Das Projekt wurde im Rahmen einer Frontend-Ausbildung mit **React**, **TypeScript** und **Vite** umgesetzt.
 
