@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# 🍺 Abschlussprojekt: React Beer API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Diese Webanwendung zeigt verschiedene Biersorten aus einer externen API, stellt detaillierte Informationen zu jedem Bier bereit und erlaubt dem Benutzer, sich ein zufälliges Bier anzeigen zu lassen. Das Projekt wurde im Rahmen einer Frontend-Ausbildung mit **React**, **TypeScript** und **Vite** umgesetzt.
 
-Currently, two official plugins are available:
+🔗 **Live-Demo**: [tinabk-react-beer-api.netlify.app](https://tinabk-react-beer-api.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Verwendete Technologien & Tools
 
-## Expanding the ESLint configuration
+- ⚛️ **React** – komponentenbasiertes JavaScript-Framework für die Benutzeroberfläche.
+- 🟦 **TypeScript** – typisierte Superset von JavaScript für bessere Codequalität.
+- ⚡ **Vite** – moderner und schneller Build- und Entwicklungsserver.
+- 🎨 **CSS3** – für das Layout, Animationen und allgemeines Styling.
+- 🗃️ **Modulare Komponentenstruktur** – für Wiederverwendbarkeit und Klarheit.
+- 🧠 **REST API ([Ironhack Beers API](https://ih-beers-api2.herokuapp.com/beers/))** – zur dynamischen Datenabfrage von Biersorten.
+- 🔠 **Google Fonts: Roboto & Roboto Slab** – für eine moderne Typografie.
+- 🧩 **Eigenes Interface (`IBeers.ts`)** – zur Definition der Bier-Datenstruktur.
+- 🛠️ **VS Code**, **Git** & **GitHub** – als Entwicklungsumgebung und zur Versionskontrolle.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🔧 Funktionen
 
-- Configure the top-level `parserOptions` property like this:
+### 📋 Bierliste anzeigen
+- Auf der Seite **„All Beers“** werden alle Biere mit Bild, Name und Slogan angezeigt.
+- Beim Klick auf ein Bier öffnet sich die Detailansicht.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🔍 Bierdetails
+- Zeigt genauere Informationen über ein gewähltes Bier:
+  - Name, Beschreibung, Alkoholgehalt, Gebräut seit, Tipps vom Braumeister u. v. m.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 🎲 Zufälliges Bier
+- Ein Button zeigt ein zufällig ausgewähltes Bier aus der API.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 🌀 Ladeanimation
+- Beim Datenladen wird ein animierter Ladeindikator angezeigt.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 🔙 Navigation
+- Zurück-Buttons, Home-Buttons mit Logosymbolen, sowie Link zum Zufallsbier.
+
+## Kontaktinformationen
+
+Falls Sie Fragen oder Vorschläge haben, können Sie mich kontaktieren:
+- **E-Mail**: barshchevskak@gmail.com
+- **GitHub**: [TinaBK24](https://github.com/TinaBK24)
+
+## Screenshots
+
+### 🔻 Home
+
+![Home](./public/img/Home.png)
+
+### 🔻 Zufälliges Bier
+
+![Beer](./public/img/Beer.png)
